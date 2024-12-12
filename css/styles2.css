@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #87CEEB;
+    padding: 10px 20px;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+}
+header img {
+    height: 100px;
+}
+header h1{
+    color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+}
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Cambia a diseño vertical en pantallas pequeñas */
+        text-align: center;
+    }
+    header nav {
+        margin-top: 10px;
+        flex-direction: column; /* Los enlaces se colocan en columnas */
+    }
+    header nav a {
+        margin: 5px 0; /* Espaciado entre los enlaces en vertical */
+    }
+}
+
+.about-us {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #87CEEB;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
