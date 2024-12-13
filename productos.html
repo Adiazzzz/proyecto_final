@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - Luna Turquesa</title>
+    <title>Productos - Luna Turqueza</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles3.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="d-flex justify-content-between align-items-center">
         <div class="logo">
             <img src="img/luna turqueza.png" alt="Luna Turquesa Logo">
@@ -18,96 +17,129 @@
             <a href="index.html">Inicio</a>
             <a href="sobrenosotros.html">Sobre Nosotros</a>
             <a href="productos.html">Productos</a>
-            <a href="#cart">Carrito de Compras</a>
+            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#cartModal">Ver carrito</button>
         </nav>
     </header>
 
-    <!-- Productos -->
     <main class="container my-5">
         <h2 class="text-center">Nuestros Productos</h2>
-        <div class="row">
+        <div class="event-card">
             <!-- Producto 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="img/iluminacion.png" class="card-img-top card-img-custom" alt="Producto 1">
+                    <img src="img/iluminacion.png" class="card-img-top card-img-custom" alt="Luces">
                     <div class="card-body">
                         <h5 class="card-title">Luces</h5>
-                        <p class="card-text">Descubre nuestro Set de Luces Profesionales, diseñado para transformar cualquier espacio en un escenario espectacular. Ideal para bodas, cumpleaños, graduaciones y eventos corporativos, este conjunto incluye una combinación de luces LED, efectos de colores dinámicos y modos ajustables para adaptarse a cualquier ambiente.</p>
+                        <p class="card-text">Set de luces profesionales para eventos.</p>
                         <p class="card-text"><strong>Precio:</strong> $100.00</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        <button class="btn btn-primary add-to-cart" data-id="1" data-name="Luces" data-price="100.00">Agregar al carrito</button>
                     </div>
                 </div>
             </div>
-            <!-- Producto 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="img/carpa.jpg" class="card-img-top card-img-custom" alt="Producto 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Carpas</h5>
-                        <p class="card-text">Garantiza el éxito de tus celebraciones al aire libre con nuestras Carpas Profesionales para Eventos, diseñadas para combinar funcionalidad, estilo y comodidad. Perfectas para bodas, cumpleaños, reuniones corporativas o cualquier ocasión especial, nuestras carpas ofrecen una solución versátil y elegante para proteger a tus invitados y realzar la decoración de tu evento.</p>
-                        <p class="card-text"><strong>Precio:</strong> $15.00</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                <!-- Producto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/carpa.jpg" class="card-img-top card-img-custom" alt="Carpas">
+                        <div class="card-body">
+                            <h5 class="card-title">Carpas</h5>
+                            <p class="card-text">Carpas profesionales para eventos al aire libre.</p>
+                            <p class="card-text"><strong>Precio:</strong> $15.00</p>
+                            <button class="btn btn-primary add-to-cart" data-id="2" data-name="Carpas" data-price="15.00">Agregar al carrito</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Producto 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="img/cabinas.jpg" class="card-img-top card-img-custom" alt="Producto 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Cabinas de sonido</h5>
-                        <p class="card-text">Lleva el sonido de tu evento al siguiente nivel con nuestras Cabinas de Sonido Profesionales, diseñadas para ofrecer una experiencia acústica impecable. Perfectas para conciertos, bodas, cumpleaños, eventos corporativos y cualquier tipo de celebración, nuestras cabinas garantizan un audio nítido y potente que impresionará a todos tus invitados.</p>
-                        <p class="card-text"><strong>Precio:</strong> $130.00</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                <!-- Producto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/cabinas.jpg" class="card-img-top card-img-custom" alt="Cabinas de sonido">
+                        <div class="card-body">
+                            <h5 class="card-title">Cabinas de sonido</h5>
+                            <p class="card-text">Cabinas de sonido profesionales para eventos.</p>
+                            <p class="card-text"><strong>Precio:</strong> $130.00</p>
+                            <button class="btn btn-primary add-to-cart" data-id="3" data-name="Cabinas de sonido" data-price="130.00">Agregar al carrito</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Producto 4 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="img/payasos.png" class="card-img-top card-img-custom" alt="Producto 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Show de payasos</h5>
-                        <p class="card-text">Añade risas y alegría a tu celebración con nuestro Show de Payasos Profesionales, una experiencia llena de diversión y entretenimiento para invitados de todas las edades. Ideal para cumpleaños, fiestas infantiles, eventos familiares y actividades corporativas, nuestro espectáculo combina humor, magia y participación interactiva para crear momentos inolvidables.</p>
-                        <p class="card-text"><strong>Precio:</strong> $68.00</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                <!-- Producto 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/payasos.png" class="card-img-top card-img-custom" alt="Show de payasos">
+                        <div class="card-body">
+                            <h5 class="card-title">Show de payasos</h5>
+                            <p class="card-text">Espectáculo de payasos profesionales para tus eventos.</p>
+                            <p class="card-text"><strong>Precio:</strong> $68.00</p>
+                            <button class="btn btn-primary add-to-cart" data-id="4" data-name="Show de payasos" data-price="68.00">Agregar al carrito</button>
+                        </div>
                     </div>
                 </div>
-            </div><!-- Producto 5 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="img/inflable.png" class="card-img-top card-img-custom" alt="Producto 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Inflable para niños</h5>
-                        <p class="card-text">Haz que tus celebraciones sean más divertidas y emocionantes con nuestros Inflables para Eventos, diseñados para brindar entretenimiento seguro y lleno de energía para niños y adultos. Ideales para fiestas infantiles, cumpleaños, ferias, eventos escolares o cualquier ocasión especial, nuestros inflables son el centro de atención que garantiza risas y momentos inolvidables.</p>
-                        <p class="card-text"><strong>Precio:</strong> $160.00</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                <!-- Producto 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/inflable.png" class="card-img-top card-img-custom" alt="Inflable para niños">
+                        <div class="card-body">
+                            <h5 class="card-title">Inflable para niños</h5>
+                            <p class="card-text">Inflables seguros y divertidos para los niños.</p>
+                            <p class="card-text"><strong>Precio:</strong> $160.00</p>
+                            <button class="btn btn-primary add-to-cart" data-id="5" data-name="Inflable para niños" data-price="160.00">Agregar al carrito</button>
+                        </div>
                     </div>
                 </div>
-            </div><!-- Producto 6 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="img/zancos.png" class="card-img-top card-img-custom" alt="Producto 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Zancos</h5>
-                        <p class="card-text">Dale un toque espectacular y único a tu celebración con nuestros Artistas en Zancos, expertos en entretenimiento visual y participación interactiva. Perfectos para bodas, cumpleaños, eventos corporativos, desfiles y fiestas temáticas, los zanquistas agregarán elegancia, diversión y un elemento sorpresa que cautivará a tus invitados.</p>
-                        <p class="card-text"><strong>Precio:</strong> $50.00</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                <!-- Producto 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/zancos.png" class="card-img-top card-img-custom" alt="Zancos">
+                        <div class="card-body">
+                            <h5 class="card-title">Zancos</h5>
+                            <p class="card-text">Artistas en zancos para eventos memorables.</p>
+                            <p class="card-text"><strong>Precio:</strong> $50.00</p>
+                            <button class="btn btn-primary add-to-cart" data-id="6" data-name="Zancos" data-price="50.00">Agregar al carrito</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <!-- Footer -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Carrito de compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Total</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                        </tbody>
+                    </table>
+                    <p class="text-end"><strong>Total a pagar: $<span id="cart-total">0.00</span></strong></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Pagar con PayPal</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <p>Síguenos en nuestras redes sociales:</p>
         <a href="https://www.facebook.com/?locale=es_LA">Facebook</a>
         <a href="https://www.instagram.com/">Instagram</a>
         <a href="https://x.com/">Twitter</a>
-        <p>&copy; 2024 Luna Turquesa - Todos los derechos reservados</p>
+        <p>&copy; 2024 Luna Turqueza - Todos los derechos reservados</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="carrito.js"></script>
 </body>
 </html>
